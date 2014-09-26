@@ -1,0 +1,62 @@
+  <div id="menuImages">
+                    <div class="imagen" id="1">
+                        <h2> TOP SELLERS </h2>                     
+                        <h2> PLAY STATION </h2>
+                        <figure class="topFig"><img src="img/lastofus.jpg"></figure>
+                        <div ng-controller="StoreController as store">
+                            <ul class="list-group left">
+                                <li class="list-group-item" ng-repeat="product in store.gamesps4">  
+                                    <h4 class="fontSize">
+                                        {{product.number}}.-<img ng-src="{{product.images[0].thumb}}" width="40px">
+                                        {{product.name}}
+                                        <em class="pull-center">{{product.price | currency }}</em>                                       
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="imagen" id="2">
+                        <h2> TOP SELLERS </h2>        
+                        <h2> XBOX </h2>
+                        <figure class="topFig"><img src="img/titanfall.jpg"></figure>
+                        <div ng-controller="StoreController as store">
+                            <ul class="list-group left">
+                                <li class="list-group-item" ng-repeat="product in store.gamesxbox">  
+                                    <h4 class="fontSize">
+                                        {{product.number}}.-<img ng-src="{{product.images[0].thumb}}" width="40px">
+                                        {{product.name}}
+                                            <em class="pull-center">{{product.price | currency }}</em>
+                                        
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--label class="labelDescription"> Women's Trail <br/>Running Shoe <br/></label>
+                        <label class="price">$109.99</label> <br/>
+                        <label class="listPrice">List Price: $130.99</label>
+                        <figure class="buyNow" id="2"><img src="img/buy.png"></figure-->
+                    </div>
+                    <div class="imagen" id="3"> 
+                        <h2> TOP SELLERS </h2>   
+                        <h2> NINTENDO </h2>
+                        <!--figure class="position"><img class="newItem" src="img/new.png"></figure-->
+                        <figure class="topFig"><img src="img/zombieU.jpg"></figure>
+                        <div ng-controller="StoreController as store">
+                            <ul class="list-group left">
+                                <li class="list-group-item" ng-repeat="product in store.gameswiiu">  
+                                    <h4 class="fontSize">
+                                        {{product.number}}.-<img ng-src="{{product.images[0].thumb}}" width="40px">
+                                        {{product.name}}
+                                        <em class="pull-center">{{product.price | currency }}</em>                                       
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--label class="labelDescription"> Women's Trail <br/>Running Shoe <br/></label>
+                        <label class="price">$109.99</label> <br/>
+                        <label class="listPrice">List Price: $130.99</label>
+                        <figure class="buyNow" id="3"><img src="img/buy.png"></figure-->
+                    </div>
+                    
+    
+                </div>

@@ -1,0 +1,787 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+@font-face{
+    font-family: Comfortaa;
+    src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+   font-family: Comfortaa;
+    background-image: url("../img/resident2.jpg");
+    color: white;
+
+}
+header{
+    background: #424242;
+    width: 80% ;
+    text-align: center;
+    display: inline-block;
+    margin: 0% 10% 0 10%;
+    position: relative;
+    font-family: Comfortaa;
+    font-size: 1.5em;
+    background-image: linear-gradient(to bottom, #000, #222);
+}
+
+nav{
+    width: 80%;
+    margin: 1% 10% 0 10%;
+    font-weight: bold;
+}
+
+nav li{
+   list-style: none;
+   position:relative; /* importante, para que el submenu tome la posición correcta*/
+}
+
+nav li li a{
+   display:block;
+}
+
+footer{
+    width: 80%;
+    margin: 1% 10% 0 10%;
+}
+
+footer aside{
+    width: 20%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+ul{
+    list-style: none;
+    display: inline-block;
+}
+
+li:hover{
+    cursor:pointer;
+}
+
+.white{
+    color: white;
+}
+
+.sectionHeader{
+    display: inline-block;
+}
+.logoleft{
+    text-align: left;
+    width: 39%;
+    display: inline-block;
+}
+
+.headerMenu{
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.menuList{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.lineBlock:hover{
+    border-bottom: 1px solid grey;
+}
+
+.lineBlock{ 
+    display: inline-block;
+    font-size: .6em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-bottom: 1px solid #443F3F;
+}
+
+.lineBlock:last-child{
+
+}
+
+.cart{
+    display: inline-block;
+    font-size: .6em;
+    text-align: right;
+    color: white;
+    border-left: 1px solid grey;
+    padding: .7em;
+    width: 10%;
+}
+
+.cartPrice{
+    color: blue; 
+}
+
+.cartQuantity{
+    color: white;
+}
+#content{
+    width: 80% ;
+    text-align: center;
+    display: inline-block;
+    margin: 1% 10% 0 10%;
+    position: relative;   
+    height: 100%;
+    padding-top: 0;
+}
+
+.logo{
+    text-align: left;
+    display: inline-block;
+
+
+}
+.vCenter{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+}
+.hide{
+    display: none;
+}
+
+.leftColumn{
+    width:20%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.rightColumn{
+    width: 79%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+}
+.womenShoes{
+    background-image: linear-gradient(to bottom, #999, #FFF);
+    display: inline-block;
+}
+
+.banner{
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background: url('../img/cms.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+
+.narrowList{
+    background-image: linear-gradient(to bottom, #999, #FFF); 
+    display: inline-block;
+}
+
+.menuTopGames{
+    font-family: 'Bree Serif', serif;
+    margin-top: 0.2em;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0;
+    color: white;
+}
+
+.topFig{
+    width: 200px;
+    text-align: center;
+    margin: 0 15%;
+    height: 260px;
+}
+
+.imagen{
+    vertical-align: top;
+   
+    background-image: linear-gradient(to bottom, #000, #666);
+    display: inline-block;
+    width: 33%;
+    padding: .5em 0 0 0;  
+    margin: .1em .0em .1em .0em;
+    height: 627px;
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.right{
+    text-align: right;
+}
+
+.top{
+    vertical-align: top;
+}
+.full{
+    width: 100%;
+}
+
+.fontSize{
+    font-size: 1.3em;
+}
+
+.footFormat{
+    background-image: linear-gradient(to bottom, #000, #222);
+    color: white;
+    text-align: center;
+}
+
+.headContent{
+    background-color: #EAD3D3;
+    text-align: left;
+    margin: 0 0 1em 0;
+}
+
+.headContent h2{
+    margin: 0;
+    padding:0;
+}
+
+.labelDescription{
+    font-family: 
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.price{
+    font-size: .8em;
+    font-weight: bold;
+    color: blue;
+}
+
+.listPrice{
+    font-size: .75em;
+    color:gray;
+}
+
+
+.navMenu{
+    font-size: .9em;
+    font-weight: bold;
+    display: inline-block;
+    border-right: 1px solid gray;
+    padding: .5em 2.5em .5em 2.5em;
+}
+
+.navMenu:hover{ 
+    cursor: pointer;
+}
+
+.underscore{
+   border-bottom: 2px solid white;
+   color:#E2C72B;
+}
+.navMenu:first-child{
+   
+}
+
+
+.menuUL{
+    display: inline-block;
+    margin: 0;
+    padding:0;
+}
+
+
+.womenShoes{
+    width: 100%;
+}
+.menuGames{
+    text-align: left;
+    font-size: 1em;
+    width: 100%;
+    padding: .5em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.menuHeight{
+  height: 634px;
+
+}
+.sideMenu{
+    padding: .5em;
+    color: black;
+
+}
+
+.black{
+    color: #424242;
+}
+
+.fa{
+    font-weight: bold;
+}
+
+.headerMenuShoes{
+   background-image: linear-gradient(to bottom, #000, #222);
+    padding: .8em;
+    color: white;
+    font-weight: bold;
+    font-size: .7em;
+    text-align: left;
+}
+
+.arrow{
+    background-image: linear-gradient(to bottom, #000, #222);
+    padding-left:10px;
+    margin: 0;
+    position:relative;
+    top: -12px;
+    text-align: left;
+    height: 10px;
+    color:  #000;
+
+}
+
+.narrowList{
+    width: 100%;
+}
+
+.size{
+    font-weight: bold;
+    font-size: .8em;
+    text-align: left;
+    margin-top: .5em;
+    margin-bottom: 0;
+    padding-left: 1em;
+}
+
+.top{
+    padding:0;
+}
+
+.lastChild{
+        color: #FFFF66;
+}
+
+.footerTitle{
+    font-size: .9em;
+    font-weight: bold;
+    padding: 1em 1em 0 1em;
+    margin: 0 1em;
+}
+
+.footerMenu{
+    padding: 1em;
+    margin: 0em 1em 1em 1em;
+    text-align: left;
+    font-size: .8em;
+}
+
+
+.subMenuMain{
+    padding: 0;
+    margin: 0;
+    background: white;
+    position: absolute;
+    z-index: 0;
+    width: 80%;
+    margin: 0px 0% 0 10.2%;
+
+}
+
+.subMenuPart{
+    display: inline-block;
+    width: 18%;
+    border-right: 1px solid gray;
+    vertical-align: top;
+    font-size: .8em;
+}
+
+.subMenuPart:last-child{
+    border: 0;
+}
+
+.subMenuList{
+    font-size: .9em;
+    padding: .3em .5em;
+    color: black;
+    font-weight: normal;
+    border-bottom: 1px solid white;
+
+}
+.subMenuList:hover{
+    cursor: pointer;
+    border-bottom: 1px solid blue;
+}
+
+.subMenuHeader{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: blue;
+}
+
+.imagenDescription{
+    background: white;
+    display: inline-block;
+}
+
+.block{
+    display: inline-block;
+}
+
+.imagenDesc{
+    height: 300px;
+    width:40%;
+    display: inline-block;
+    vertical-align: top;
+    background: url('../img/shoe.jpg') 50% 20% no-repeat;
+}
+
+.imagentext{
+    width: 50%;
+    display: inline-block;
+}
+
+.backArrow{
+    text-align: left;
+}
+
+.cursor{
+    cursor:pointer;
+}
+
+.position{
+    position: absolute;
+    top:10px;
+    left:150px;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+@media screen and (max-width:768px){
+
+
+header{
+    width: 100% ;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+img{
+    width: 50px;
+}
+
+footer{
+    width: 100%;
+    margin: 0
+}
+footer aside{
+    width: 40%;
+
+}
+.newItem{
+    width: 15px;
+}
+.position{
+    width: 20px;
+    top: 0;
+    left: 40px;
+}
+.imagen{
+    width: 20%;
+}
+.logoleft{
+    width: 65%;
+    text-align: center;
+    display: inline-block;
+    font-size: .8em;
+}
+
+.logo{
+    text-align: left;
+    display: inline-block;
+    width: 65px   ;
+    height: 55px;
+
+}
+.menuList, .mainCartFull, .cartPrice, .leftColumn,.footerMenu{
+    display: none;
+    text-align: center;
+}
+.cart{
+    border:0px;
+}
+
+.headerMenu{
+    width: 30%;
+}
+.iconCart{
+    font-size: .8em;
+    display: inline-block;
+}
+
+.menuUL{
+    text-align: center;
+    font-size: .6em;
+}
+
+
+.rightColumn,#content{
+    width: 100%;
+    margin: 0;
+
+}
+
+.banner{
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.headContent{
+    font-size: .8em;
+    text-align: center;
+    width: 100%;
+}
+
+.subMenuHeader{
+    font-size: .9em;
+    padding: 0;
+    margin: 0;
+}
+
+.subMenuPart{
+    width: 30%;
+}
+.subMenuList{
+    padding: 0;
+    margin: 0;
+}
+
+
+.footerTitle{
+    margin: 0;
+    padding:0;
+}
+.footerTitle:hover{
+    cursor: pointer;
+}
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
