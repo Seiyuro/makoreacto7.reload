@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Mako's Music</title>
+	<link rel="stylesheet" type="text/css" href="stylus/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+	<header class="header relative border-bottom ">
+		<div class="logo">
+			<div class="wrap center-block">
+				<figure class="image isotipo left"> 
+					<img src="img/logo_mako.jpg" alt="Mako's Music">
+				</figure>
+				<div class="logoText block"> Mako's Music</div>
+				<div class="user right">
+					<figure class="avatar round left">
+						<img src="img/users/seiyuro.jpg" width="38" height="38">
+					 </figure>
+					<span class="left username">@Seiyuro </span>
+				</div>
+				<div class="search right">
+					<form class="relative" action="">
+						<span class="icon-search search-icon"></span>
+						<input type="text" placeholder="Ej. Nirvana" class="input" />
+						<span class="close-icon">X</span>
+					</form>		
+				</div>
+			</div>
+		</div>
+		<a href"#" class="button-menu icon-menu"></a>
+		<nav class="menu">
+			<ul class="list wrap center-block">
+				<li class="item noSelect">
+					<div class="pointer cursor">Top Music</div>
+				</li>
+				<li class="item select">
+					<div class="pointer cursor">Play List</div>
+				</li>
+				<li class="item noSelect">
+					<div class="pointer cursor">Profile</div>
+				</li>
+				<li class="item noSelect">
+					<div class="pointer cursor">Settings</div>
+				</li>
+	
+			</ul>
+		</nav>
+		<div class="title">
+			<span>Top hits </span> 
+		</div>
+	</header>
+	<section class="playing small medium large">
+		<div class="music">
+			<figure class="image relative">
+				<img id="mainImage" src="img/nirvana 640.jpg" alt="Smell like Teen Spirit Nirvana" width="320" height="320">
+				<div class="actions padding right-text">
+					<a href="" class="action icon-add"> </a>
+					<a href="" class="action icon-love"> </a>
+					<a href="" class="action icon-share"> </a>
+				</div>
+			</figure>		
+			<div class="description center-text">
+				<p> Now Playing:</p>
+				<p class="name">
+					Smell like teen Spirit
+				</p>
+				<p class="author">
+					Nirvana
+				</p>
+				<div id="audioControl"> 
+					<audio  controls >
+					<source id="source" src="music/smell_like.mp3" type="audio/mp3">
+					</audio>
+				</div>
+			</div>
+			<!--div class="play center-text">
+				<div class="action grey icon-prev block cursor"> </div>
+				<div class="action grey icon-play block cursor current"> </div>
+				<div class="action grey icon-next block cursor"> </div>
+				<div class="action grey icon-random block cursor"> </div>
+				<div class="action grey icon-vol block cursor"> </div>
+			</div-->
+		</div>		
+			<div class="playlist right">
+				<p> Now Playing:</p>
+				<p class="name">
+
+					Smell like Teen Spirit
+				</p>
+				<p class="author">
+					Nirvana
+				</p>
+				<ul class="list">
+					<li class="item border-bottom smell_like cursor">
+						<span> Nirvana -Smell Like Teen Spirit	</span>
+							<span class="right">
+							<div class="action grey icon-play block cursor come_as"> </div>
+
+						</span>
+					</li>
+					<li class="item border-bottom rock_dead cursor">
+						<span> Marilyn Manson - Rock Is Dead </span>
+							<span class="right">
+							<div class="action grey icon-play block cursor rock_is"> </div>
+						</span>
+					</li>
+					<li class="item border-bottom wind_of cursor">
+						<span> Scorpions - Wings of Change</span>
+							<span class="right">
+							<div class="action grey icon-play block cursor"> </div>
+
+						</span>
+					</li>		
+					<li class="item border-bottom smooth cursor">
+						<span> Santana - Smooth</span>
+							<span class="right">
+							<div class="action grey icon-play block cursor"> </div>
+
+						</span>
+					</li>	
+					<li class="item border-bottom crazy cursor">
+						<span> AeroSmith - Crazy	</span>
+							<span class="right">
+						<div class="action grey icon-play block cursor"> </div>
+						</span>
+					</li>	
+					<li class="item border-bottom nothing cursor">
+						<span> Metallica - Nothing Else Matters </span>
+							<span class="right">
+							<div class="action grey icon-play block cursor"> </div>
+						</span>
+					</li>		
+				</ul>
+			</div>	
+	</section>
+	<section class="container">	
+		<article class="song smell_like cursor">	
+			<figure class="image">	
+				<img src="img/albums/nirvana.jpg" alt="Nirvana Smell like Teen Spirit" width="136" height="137">
+			</figure>
+			<p class="nameContainer"> Smell Teen Spirit</p>
+			<p class="author">Nirvana	</p>	
+		</article>	
+		<article class="song wind_of cursor">	
+			<figure class="image">	
+				<img src="img/albums/scorpions.jpg" alt="Wind of Change" width="136" height="137">
+			</figure>
+			<p class="nameContainer">Wind of Change</p>
+			<p class="authorContainer">Scorpions	</p>	
+		</article>	
+		<article class="song rock_dead cursor">	
+			<figure class="image">	
+				<img src="img/albums/marilin.jpg" alt="Rock is Dead" width="136" height="137">
+			</figure>
+			<p class="nameContainer"> Rock Is Dead</p>
+			<p class="authorContainer">Marilyn Manson</p>	
+		</article>	
+		<article class="song smooth cursor">	
+			<figure class="image">	
+				<img src="img/albums/santana.jpg" alt="Smooth" width="136" height="137">
+			</figure>
+			<p class="nameContainer">Smooth </p>
+			<p class="authorContainer">Santana</p>	
+		</article>	
+		<article class="song crazy cursor">	
+			<figure class="image">	
+				<img src="img/albums/aerosmith.jpg" alt="Crazy" width="136" height="137">
+			</figure>
+			<p class="nameContainer"> Crazy</p>
+			<p class="authorContainer">AeroSmith	</p>	
+		</article>	
+		<article class="song nothing cursor">	
+			<figure class="image">	
+				<img src="img/albums/metallica.jpg" alt="Nothing Else Matters" width="136" height="137">
+			</figure>
+			<p class="nameContainer"> Nothing Else M.</p>
+			<p class="authorContainer">Metallica	</p>	
+		</article>	
+	</section>
+
+</body>
+</html>
